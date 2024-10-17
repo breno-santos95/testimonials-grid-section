@@ -1,0 +1,77 @@
+@media (max-width: 1280px) {
+  .main-container .grid-container {
+    font-size: 1rem;
+    margin: 8%;
+  }
+}
+
+@media (min-width: 1920px) {
+  .main-container .grid-container {
+    font-size: 1.5rem;
+  }
+
+  .attribution{
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 2560px) {
+  .main-container .grid-container {
+    font-size: 2.2rem;
+  }
+
+  .testimonial-container {
+    padding: 40px;
+  }
+
+  .testimonial-container .testimonial-header .graduate-picture {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+
+  .attribution{
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 4493px) {
+  .main-container .grid-container {
+    font-size: 3.8rem;
+    gap: 50px;
+  }
+
+  .testimonial-container {
+    padding: 50px 90px;
+  }
+
+  .testimonial-container .testimonial-header .graduate-picture {
+    width: 9rem;
+    height: 9rem;
+  }
+
+  .attribution{
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .main-container {
+    height: 100%;
+  }
+
+  .main-container .grid-container {
+    grid-template-areas:
+      "daniel"
+      "daniel"
+      "jonathan"
+      "jeanette"
+      "patrick"
+      "patrick"
+      "kira"
+      "kira";
+
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 1fr);
+    font-size: 13px;
+  }
+}

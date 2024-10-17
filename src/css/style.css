@@ -1,0 +1,147 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+  background-color: var(--light-grayish-blue);
+}
+
+.main-container {
+  width: 100vw;
+  height: 100vh;  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+}
+.grid-container {
+  display: grid;  
+  grid-template-areas:
+    "daniel daniel jonathan kira"
+    "jeanette patrick patrick kira";
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.5rem;
+  margin: 0 5% 1%;
+}
+
+.testimonial-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-radius: 0.8em;
+  padding: 25px;
+  gap: 20px;
+  box-shadow: 0.1px 0.1px 20px var(--grayish-blue);
+}
+
+.testimonial-container .testimonial-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+.testimonial-container .testimonial-header .graduate-picture {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;  
+}
+
+.testimonial-container.daniel .testimonial-header .graduate-picture{
+    border: 0.3rem solid hsl(263, 77%, 70%);
+}
+
+.testimonial-container.patrick .testimonial-header .graduate-picture{
+    border: 0.3rem solid var(--moderate-violet);
+}
+
+.testimonial-container.daniel {
+  grid-area: daniel;
+  background-color: var(--moderate-violet);
+  background-image: url(../images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: 80% 0%;
+}
+
+.testimonial-container.jonathan {
+  grid-area: jonathan;
+  background-color: var(--grayish-blue);
+}
+
+.testimonial-container.jeanette {
+  grid-area: jeanette;
+  background-color: #fff;
+}
+
+.testimonial-container.patrick {
+  grid-area: patrick;
+  background-color: var(--blackish-blue);
+}
+
+.testimonial-container.kira {
+  grid-area: kira;
+  background-color: #fff;
+}
+
+.testimonial-container.daniel .testimonial-title,
+.testimonial-container.jonathan .testimonial-title,
+.testimonial-container.patrick .testimonial-title {
+  color: #fff;
+  font-weight: var(--font-weight-bold);
+}
+
+.testimonial-container.daniel .testimonial-content,
+.testimonial-container.jonathan .testimonial-content,
+.testimonial-container.patrick .testimonial-content {
+  color: var(--light-gray);
+  line-height: 150%;
+  opacity: 70%;
+}
+
+.testimonial-container.jeanette .testimonial-title,
+.testimonial-container.kira .testimonial-title {
+  color: var(--grayish-blue);
+}
+
+.testimonial-container.jeanette .testimonial-content,
+.testimonial-container.kira .testimonial-content {
+  color: var(--grayish-blue);
+  line-height: 150%;
+  opacity: 70%;
+}
+
+.testimonial-container.daniel .testimonial-header,
+.testimonial-container.jonathan .testimonial-header,
+.testimonial-container.patrick .testimonial-header {
+  color: var(--light-gray);
+}
+
+.testimonial-container.daniel .testimonial-header .verified-graduate,
+.testimonial-container.jonathan .testimonial-header .verified-graduate,
+.testimonial-container.patrick .testimonial-header .verified-graduate {
+  opacity: 50%;
+}
+
+.testimonial-container.jeanette .testimonial-header,
+.testimonial-container.kira .testimonial-header {
+  color: var(--grayish-blue);
+}
+
+.testimonial-container.jeanette .testimonial-header .verified-graduate,
+.testimonial-container.kira .testimonial-header .verified-graduate {
+  opacity: 50%;
+}
+
+.attribution {         
+  font-size: 1.5rem;  
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
