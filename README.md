@@ -36,7 +36,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/breno-santos95/testimonials-grid-section](https://your-solution-url.com)
-- Live Site URL: [https://breno-santos95.github.io/testimonials-grid-section/](https://your-live-site-url.com)
+- Live Site URL: [https://breno-santos95.github.io/testimonials-grid-section/]([https://your-live-site-url.com](https://breno-santos95.github.io/testimonials-grid-section/))
 
 ## My process
 
